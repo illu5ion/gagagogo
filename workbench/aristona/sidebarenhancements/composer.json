@@ -1,0 +1,23 @@
+{
+    "name": "aristona/SidebarEnhancements",
+    "description": "",
+    "authors": [
+        {
+            "name": "Aristona",
+            "email": "iamaristona@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Aristona\\SidebarEnhancements\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

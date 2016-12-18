@@ -1,0 +1,7 @@
+### English ###
+
+    1. Replace app\controllers\user\UserController.php
+
+### Türkçe ###
+
+    1. app\controllers\user\UserController.php dosyasını değiştirin.

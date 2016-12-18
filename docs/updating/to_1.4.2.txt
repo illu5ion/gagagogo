@@ -1,0 +1,15 @@
+﻿### English ###
+
+Replace and override the following files:
+
+app/controllers/InstallController.php
+app/controllers/user/UserController.php
+assets/admin/js/charisma.js
+
+### Türkçe ###
+
+Aşağıdaki dosyaları güncelleyin:
+
+app/controllers/InstallController.php
+app/controllers/user/UserController.php
+assets/admin/js/charisma.js

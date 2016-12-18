@@ -1,0 +1,3 @@
+1. Replace all files and folders. (Except "app/config", "uploads" and "app/storage" folders!)
+2. Enter your website, login to admin panel normally.
+3. Click on "Update application" link on admin panel.

@@ -1,0 +1,58 @@
+### English ###
+
+    1. Replace "__dev" folder.
+
+    2. Replace the following folders in root directory:
+        composer.json, composer.lock
+
+    3. Replace the following folders in app directory:
+        Aristona, controllers, database, models, views, start, composers.php, filters.php, routes.php
+
+    4. Create "shared" folder under "assets" and move "uploads" folder (it can be found in root folder) in it. It should look like:
+        /uploads/ -> /assets/public/uploads/
+
+    5. Replace "vendor" folder.
+
+    6. Replace "workbench" folder.
+
+    7. Replace "bootstrap" folder.
+
+    8. Replace "assets/home/js" folder.
+
+    9. Replace "packages" folder.
+
+    10. Replace "app/config/app.php" file.
+
+    11. Delete everything in "app/storage/views" folder.
+
+    12. Enter "yoursite.com/updater/update" to finalize process. (via browser)
+
+
+### Türkçe ###
+
+    1. "__dev" klasörünü değiştirin.
+
+    2. Ana klasörde bulunan aşağıdaki dosyaları değiştirin.
+        composer.json, composer.lock
+
+    2. app klasöründe bulunan aşağıdaki dosyaları değiştirin.
+        Aristona, controllers, database, models, views, start, composers.php, filters.php, routes.php
+
+    4. Assets klasörü altında "public" adında bir klasör oluşturun, ve anasayfadaki "uploads" klasörünü kesip bunun içine atın. Şu şekilde görünmeli:
+        /uploads/ -> /assets/public/uploads/
+
+    5. "vendor" klasörünü değiştirin.
+
+    6. "workbench" klasörünü değiştirin.
+
+    7. "bootstrap" klasörünü değiştirin.
+
+    8. "assets/home/js" klasörünü değiştirin.
+
+    9. "packages" klasörünü değiştirin.
+
+    10. "app/config/app" dosyasını değiştirin.
+
+    11. "app/storage/views" içindeki herşeyi silin.
+
+    12. "siteniz.com/updater/update" adresine 1 defa girin. (tarayıcıdan)

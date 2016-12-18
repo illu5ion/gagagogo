@@ -1,0 +1,5 @@
+1. Replace all files and folders. (Except "app/config", "uploads" and "app/storage" folders!)
+2. Copy "app\config\packages\artdarek\oauth-4-laravel" folder to your "app\config\packages\artdarek\oauth-4-laravel" folder.
+(optional). Enter your Facebook application credentials for Facebook oAuth login feature.
+3. Enter your website, login to admin panel normally.
+4. Click on "Update application" link on admin panel.

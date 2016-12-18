@@ -1,0 +1,11 @@
+### English ###
+
+    1. Backup your data. (e.g your database or your personalized app/lang folder)
+    2. Replace all files and folders. (Except "app/config", "app/storage" and "uploads" folders!)
+    3. Enter "yoursite.com/updater/update" to finalize process. (via browser)
+
+### Türkçe ###
+
+    1. Verilerinizi yedekleyin. (örn veritabanınız, veya kişiselleştirdiğiniz app/lang dosyanız)
+    2. Tüm dosya ve klasörleri değiştirin. ("app/config", "app/storage" ve "uploads" hariç!)
+    3. "siteadresiniz.com/updater/update" adresine tarayıcıdan bir defa girin.

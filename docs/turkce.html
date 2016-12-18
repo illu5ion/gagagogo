@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Arwell :: Dökümantasyon</title>
+
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .arwell-color {
+            color: #454545;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="./assets/images/logo.png" class="center">
+    
+        <h1 class="center arwell-color">Arwell :: Dökümantasyon <i>(versiyon 1.6 için)</i></h1>
+
+        <a href="./index.html"><h2 class="center arwell-color"><u>Switch to English Documentation?</u></h2></a>
+        
+        <hr>
+        
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                    Çıkış tarihi: 10/01/2014<br>
+                    Yer: Kastamonu<br>
+                    Geliştirici: Anıl ÜNAL<br>
+                    Email: <a href="mailto:iamaristona@gmail.com">iamaristona@gmail.com</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->      
+    
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Merhaba! Arwell'i satın aldığınız için teşekkür ederim. Eğer bu dökümantasyonun kapsamı dışında sorularınız olursa, bana email adresimden veya <a href="http://codecanyon.net/user/Aristona">buradaki</a> iletişim formundan ulaşabilirsiniz.</p>
+            </div>
+        </div><!-- end div .borderTop -->
+        
+        <hr>
+        
+        <h2 id="toc" class="alt">İçerik</h2>
+        <ul class="alpha">
+            <li><a href="#preface">1. Giriş</a></li>
+                <li><a href="#preface1">&nbsp;&nbsp;1.1 Teşekkürler</a></li>
+                <li><a href="#preface2">&nbsp;&nbsp;1.2 Kullanılan Teknoloji</a></li>
+                <li><a href="#preface3">&nbsp;&nbsp;1.3 Klasör yapısı</a></li>
+                <li><a href="#preface4">&nbsp;&nbsp;1.4 Demo</a></li>
+                <li><a href="#preface5">&nbsp;&nbsp;1.5 İhtiyaçlar</a></li>
+                <li><a href="#preface6">&nbsp;&nbsp;1.6 Yama Notları</a></li>
+            <li><a href="#installation">2. Kurulum</a></li>
+                <li><a href="#installation1">&nbsp;&nbsp;2.1 Konfigürasyon değişiklikleri</a></li>
+                <li><a href="#installation2">&nbsp;&nbsp;2.2 Yükleyiciyi kullanmak</a></li>
+                <li><a href="#installation3">&nbsp;&nbsp;2.3 Facebook uygulaması oluşturmak</a></li>
+            <li><a href="#application">3. Arwell'i kullanmak</a></li>
+                <li><a href="#application1">&nbsp;&nbsp;3.1 Giriş yapalım</a></li>
+                <li><a href="#application2">&nbsp;&nbsp;3.2 Yetkileri anlamak</a></li>
+            <li><a href="#updating">4. Güncellemeler</a></li>
+                <li><a href="#updating1">&nbsp;&nbsp;4.1 Uygulamayı güncellemek</a></li>
+            <li><a href="#credits">5. Kapanış</a></li>
+                <li><a href="#credits1">&nbsp;&nbsp;5.1 Kapanış</a></li>
+        </ul>
+        <hr>
+
+    <!--
+        Section Header
+    -->
+    <div id="preface">
+        <h1>1. Giriş</h1>
+    </div>
+
+        <!-- section -->
+        <h3 id="preface1"><strong>1.1 Teşekkürler</strong> - <a href="#toc">yukarı</a></h3>
+        <p class="prepend-top append-0">Merhaba! Arwell'i satın aldığınız için teşekkür ederim. Eğer bu dökümantasyonun kapsamı dışında sorularınız olursa, bana email adresimden veya <a href="http://codecanyon.net/user/Aristona">buradaki</a> iletişim formundan ulaşabilirsiniz.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface2"><strong>1.2 Kullanılan teknoloji</strong> - <a href="#toc">yukarı</a></h3>
+        <p>Arwell, arkayüzde son derece güçlü bir PHP frameworkü olan Laravel 4 üzerine kurulmuştur. Önyüzde ise tasarım ve responsiveness için Bootstrap 3 ve scriptler için Query kullanılmıştır. Yönetici paneli ise açık kaynaklı olan Charisma teması ile geliştirilmiştir.</p>
+
+        <p>Arwell ile birçok veritabanını kullanabilirsiniz, ancak hostinglerde standart olarak MySQL kullanıldığı için, öntanımlı olarak MySQL kullanılmıştır. Eğer MySQL'den başka bir veritabanı kullanacaksanız (örn PostgreSQL) bunu konfigürasyonu değiştirerek kolayca yapabilirsiniz.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface3"><strong>1.3 Klasör yapısı</strong> - <a href="#toc">yukarı</a></h3>
+        <p>Başlamadan önce size Arwell'nın klasör yapısı hakkında bilgi vermek istiyorum.</p>
+
+        <pre>
+            app: Bu klasörde Arwell'nın arkayüz kodları bulunmaktadır.
+            app/config: Bu klasörde konfigürasyon dosyaları bulunmaktadır.
+            bootstrap: Laravel tarafından kullanılan klasör.
+            vendor: Uygulamanın ihtiyacı olan kütüphaneler bu klasördedir.
+
+            assets/home: Arwell tasarımı için kullanılan önyüz materyallerini barındırmaktadır.
+            assets/admin: Admin paneli tasarımı için kullanılan önyüz materyallerini barındırmaktadır.
+            uploads: Sisteme yüklediğiniz herşey burada tutulacaktır.
+            docs: Uygulamanın dökümantasyonu bu klasördedir.
+            workbench: Benim kişisel komponentlerim burada bulunmaktadır.
+        </pre>
+
+        <p>Anasayfadaki dosyalar sizin için pek anlam ifade etmiyor. Onları birçoğu Arwell'i geliştirirken kullandığım uygulamaların konfigürasyon dosyaları ve tamamen zararsızdır. (Not: Hiçbirşeyi silmeyin, yoksa uygulama düzgün çalışmayabilir.)</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface4"><strong>1.4 Demo</strong> - <a href="#toc">yukarı</a></h3>
+        <p>Bu dökümantasyon yazıldığı sırada örnek Arwell projesi <a href="http://arwell.anilunal.com/">bu adreste</a> bulunmaktadır. Deneyebilirsiniz!</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface5"><strong>1.5 İhtiyaçlar</strong> - <a href="#toc">yukarı</a></h3>
+        <p>Arwell'in çalışması için aşağıdakiler gerekmektedir:</p>
+            <ul>
+                <li>PDO extension</li>
+                <li>PHP 5.3.7 veya üzeri (1.4.1 yaması ve üzeri PHP 5.4 gerektiriyor)</li>
+                <li>PHP GD Extensionu</li>
+                <li>PHP FileInfo Extensionu</li>
+                <li>PHP Bcrypt Extensionu (PHP 5.3.7 ile beraber gelmekte)</li>
+                <li>Bir veritabanı</li>
+                <li>Apache mod_rewrite modülü</li>
+            </ul>
+        <hr>
+        <!-- section -->
+
+        <div class="clearfix"></div>
+
+        <!-- section -->
+        <h3 id="preface6"><strong>1.6 Yama Notları</strong> - <a href="#toc">yukarı</a></h3>
+
+                <p>Yama 1.6</p>
+
+                <ul>
+                    <li>Birçok hata giderildi (özellikle facebook ile ilgili olanlar).</li>
+                    <li>Sidebar Enhancements plugini bedava olarak eklendi.</li>
+                    <li>Artık paylaşımların titlelerinde unique kontrolü yok.</li>
+                    <li>URL yapısı biraz değiştirildi.</li>
+                    <li>Meme Generator plugini satışa çıkarıldı.</li>
+                    <li>Facebook API 2.0 versiyonuyla uyumlu hale getirildi.</li>
+                    <li>Facebook eğer email göndermezse, kullanıcılar artık kendilerine bir nick seçebilecekler.</li>
+                    <li>Türkçe dilini etkileyen bir bug giderildi.</li>
+                    <li>Arwell'in tüm komponentleri son stabil versiyona güncellendi.</li>
+                </ul>
+
+                <p>Yama 1.5</p>
+
+                <ul>
+                    <li>Rapor edilen birçok hata giderildi.</li>
+                    <li>Captcha özelliği silindi.</li>
+                    <li>Plugin sistemi geliştirildi. Artık bedava ve ücretli birçok plugini kullanabileceksiniz!</li>
+                    <li>Uygulama üzerinde bazı yapısal değişiklikler yapıldı.</li>
+                    <li>Admin paneli artık "Pluginler" adında özel bir alana sahip.</li>
+                    <li>Bu alan üzerinde pluginleri yükleyip silebilirsiniz.</li>
+                </ul>
+
+
+                <p>Yama 1.4.2</p>
+
+                <ul>
+                    <li>Kurulum esnasındaki bazı hatalar giderildi.</li>
+                    <li>Yüklenen resimler artık tekrar boyutlandırılıyor.</li>
+                </ul>
+
+                <p>Yama 1.4.1</p>
+
+                <ul>
+                    <li>IE 11 ile ilgili bazı buglar giderildi.</li>
+                    <li>Laravel versiyonu 4.0'dan 4.2'ye çıkarıldı.</li>
+                    <li>Bu değişiklik sebebiyle, PHP gereksinimi PHP 5.4.0 olarak ayarlandı.</li>
+                    <li>Pace.js eklendi. Artık sitenizin sağ üst kısmında yükleniyor animasyonu göreceksiniz.</li>
+                    <li>Artık SASS ve JS kodlarına __dev klasöründen ulaşabilirsiniz.</li>
+                    <li>Javascript kodları minify ve uglify edildi. (performans artışı)</li>
+                    <li>"Hiçbir paylaşım bulunamadı" hata mesajı artık en fazla 1 defa çıkıyor.</li>
+                    <li>Artık "bir saat önce" gibi tarih mesajları düzgün olarak Türkçe'ye çevriliyor.</li>
+                    <li>Dökümantasyon bu yamadaki değişiklikleri kapsayacak şekilde güncellendi.</li>
+                </ul>
+
+
+                <p>Yama 1.4</p>
+
+                <ul>
+                    <li>Yeni özellik: Türkçe artık resmi olarak desteklenen bir dil olmaya başladı.</li>
+                    <li>Yeni özellik: Artık Yönetici Ayarları içerisinden öntanımlı tema değişikliği yapılabiliyor.</li>
+                    <li>Yeni özellik: Paylaşımlara "Sonraki" butonu eklendi.</li>
+                    <li>Geliştirme: Artık tema isimleri Türkçe görünecek.</li>
+                    <li>Geliştirme: Yönetici paneli artık hem Türkçe, hem İngilizce desteklemekte.</li>
+                    <li>Geliştirme: Kullanıcı yönetimi sayfasında artık kullanıcının nereden kayıt olduğu görülebiliyor. (örn facebook)</li>
+                    <li>Hata çözümü: Yasaklı kullanıcılar artık Arwell'e facebook üzerinden giriş yapamayacaklar.</li>
+                    <li>Hata çözümü: Facebook Connect özelliği geliştirildi ve yaşanan bazı hatalar düzeltildi.</li>
+                    <li>Hata çözümü: Artık silinen gaglar arkalarında gereksiz bilgi bırakmıyor. (örn bildirimler)</li>
+                    <li>Hata çözümü: Pinterest butonu artık resmi düzgün çekiyor.</li>
+                    <li>Karışık: Dökümantasyon bu yamadaki değişiklikleri kapsayacak şekilde güncellendi.</li>
+                </ul>
+
+                <p>Eski yamalar</p>
+                <ul>
+                    <li>Türkçe desteği Arwell'e 1.4 yamasıyla eklenmiştir.</li>
+                </ul>
+
+                <p><b>Güncelleme</b></p>
+                <span>Lütfen `/docs/updating` klasörünü açın. Her versiyon için güncelleme talimatlarını orada bulabilirsiniz.</span>
+
+        <hr>
+        <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="installation">
+        <h1>2. Kurulum</h1>
+    </div>
+
+        <!-- section -->
+        <h3 id="installation1"><strong>2.1 Konfigürasyon değişiklikleri</strong> - <a href="#toc">yukarı</a></h3>
+    
+        <p>Öncelikle <b>`app/config/database.php`</b> dosyasını bir yazı editörü ile açın. (örn. Notepad) Bu satırı bulun:</p>
+            <img class="center" src="assets/images/1database.png" alt="Image" />
+
+        <p>Buradaki bilgileri veritabanınızın bilgileriyle uyuşacak şekilde doldurun. Sadece sağdaki değerleri değiştirin ve tek tırnaklarla virgülü bozmamaya özen gösterin. <b>host, database, username and password</b> değerlerini değiştirmeniz yeterlidir.</p>
+
+        <p>Şimdi, <b>`app/config/site.php` dosyasını açın.</b></p>
+        <img class="center" src="assets/images/1site.png" style="width: 600px; height: auto;" alt="Image" />
+        
+        <p>
+            <b>Application name</b> uygulamanızın adıdır. Buraya uygulamanızın adı olarak şirket adınızı vb. girebilirsiniz.<br>
+            <b>Title seperator</b> tarayıcınızın en üstündeki, uygulama adı ile sayfayı ayıran ayraçtır. :: olarak kalabilir, veya isterseniz | yada - gibi sembolleri de kullanabilirsiniz.<br>
+            <b>Description</b> sitenizin açıklamasıdır. Bu açıklama arama motorları tarafından sitenizin ne olduğunu anlamak için kullanılacaktır. Kısa ve öz olarak websitenizi burada tanıtın.<br>
+            <b>Keywords</b>, Google gibi arama motorlarının sitenizi indexlemek için kullanacağı kelimelerdir. Buradaki kelimeleri virgülle ayırabilirsiniz. Örneğin, "resimler, komik resimler, vine videoları" şeklinde kullanabilirsiniz.<br>
+        </p>
+
+        <p>Son olarak, <b>app/routes.php</b> dosyasını açın, ve üst kısımda aşağıdaki kod parçacığını bulun.</p>
+            <pre>App::setLocale(Session::get('lang', 'en'));</pre>
+
+        <p>Buradaki <b>en</b> ifadesini, <b>tr</b> olarak değiştirip kaydedin. (küçük harflerle yazılmak zorunda) Böylece kurulum aşamasında Türkçe Yükleyici'yi kullanabilirsiniz.
+
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="installation2"><strong>2.2 Yükleyiciyi kullanmak</strong> - <a href="#toc">yukarı</a></h3>
+    
+        <p>Şuana kadar herşeyi doğru yaptıysanız artık yükleyiciyi çalıştırabiliriz. Sitenize girmeye çalışın, aşağıdaki sayfa sizi karşılıyor olacak.</p>
+
+        <img class="center" src="assets/images/install.png" style="width: 600px; height: auto;" alt="Image" />
+
+        <p>Yönetici bilgilerinizi girin ve yükle butonuna tıklayın. Aşağıdaki sayfayı gördüyseniz (yazılar farklı olabilir ama yeşil bir kutucuk olmalı) </p>
+
+        <img class="center" src="assets/images/success.png" style="width: 600px; height: auto;" alt="Image" />
+
+        <p>herşeyi doğru yaptınız ve Arwell'i kurdunuz demektir. Ancak yapmamız gereken daha birçok şey var.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="installation3"><strong>2.3 (OPSİYONEL) Facebook uygulaması oluşturmak</strong> - <a href="#toc">yukarı</a></h3>
+    
+        <p>Facebook ile bağlan özelliğini kullanmak istiyorsanız, kendinize <b>https://developers.facebook.com</b> adresinde bir uygulama açmalısınız. Uygulamanızı oluşturmak için aşağıdaki adımları izleyin. (Facebook ile bağlan kullanmak istemiyorsanız bu adımı atlayın.)</p>
+
+        <ol>
+            <li>https://developers.facebook.com'a girin.</li>
+            <li>"Uygulamalarım" ve daha sonra "Yeni uygulama oluştur" linkine tıklayın.</li>
+            <li>Görünen isim: Sitenizin adını girin ve bir kategori seçin.</li>
+            <li>Facebook.com adresine girin. Ayarlar sayfasından "Uygulamalarımı yönet" linkine tıklayın.</li>
+            <li>Uygulamanız orada görünüyor olmalı. Üzerine tıklayın.</li>
+            <li>"App code" ve "App secret" değerlerini kopyalayın.</li>
+            <li>/config/packages/artdarek/oauth-4-laravel/config.php dosyasını açın.</li>
+            <li>"App code" değerini 'client_id' bölümüne yazın.</li>
+            <li>"App secret değerini 'client_secret' bölümüne yazın ve kaydedin.</li>
+            <li>Facebook uygulamanıza geri dönün, Ayarlar'a tıklayın.</li>
+            <li>Email adresinizi girin.</li>
+            <li>"Gelişmiş" linkine tıklayın. "Valid OAuth redirect URIs"'i bulun ve website adresinizi buraya yazın.</li>
+            <li>Son olarak, "Status & Review" sayfasına girin ve uygulamanızı çalıştırın.</li>
+        </ol>
+
+        <p>En zevkli yere geldik! Artık uygulamamız kurulduğuna göre kullanmaya başlayabiliriz. Kahvenizden bir yudum alın ve 3. bölüme geçin!</p>
+
+        <hr>
+        <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="application">
+        <h1>3. Arwell'i kullanmak</h1>
+    </div>
+        
+    <!-- section -->
+    <h3 id="application1"><strong>3.1 Giriş yapalım</strong> - <a href="#toc">yukarı</a></h3>
+
+    <p>Sitenize girdikten sonra, sağ üstte bulunan kullanıcı ikonuna tıklayın ve daha sonra giriş butonuna tıklayın.</p>
+
+            <img class="center" src="assets/images/login.png" style="width: 600px; height: auto;" alt="Image" />
+
+    <p>Biraz önce admin panelinde girdiğiniz bilgilerinizle giriş yapmayı deneyin. Giriş yapıldıysa, tekrar kullanıcı ikonuna tıklayın ve tıkladığınızda "Yönetici" linkine tıklayın. Sizi bu sayfaya atacak:</p>
+
+            <img class="center" src="assets/images/admin.png" style="width: 700px; height: auto;" alt="Image" />
+
+    <p>Burası sizin yönetici panelinizdir ve Arwell'in yönetici panelini kullanmak çocuk oyuncağıdır! Şimdi yönetici panelinde neler yapabileceğinizden bahsedelim.</p>
+
+    <p><b>`Siteye geri dön.`</b> butonu sizi siteye geri döndürür. Sağ üstteki <b>`kullanıcıadınız`</b> butonuna tıklayarak çıkış yapabilir veya profil bilgilerinizi güncelleyebilirsiniz. Soldaki menü ise yapabileceğiniz işlemleri göstermektedir. Zamanınızın büyük bir kısmını burada harcayacaksınız.</p>
+    
+    <h3><u>Paylaşım Yönetimi</u></h3>
+    <p>Bu bölümde paylaşımları yönetebilirsiniz. Paylaşımları popüler kısmına taşıyabilir, gizleyebilir veya silebilirsiniz.</p>
+
+    <h3><u>Kategori Yönetimi</u></h3>
+
+    <p>Her paylaşım bir kategoriye eklenmek zorundadır. Bu yüzden bu bölümde kategorilerinizi oluşturabilirsiniz.</p>
+
+    <h3><u>İletişim Yönetimi</u></h3>
+
+    <p>Burada ziyaretçilerinizin iletişim sayfasından gönderdiği mesajları bulabilirsiniz.</p>
+
+    <h3><u>Sayfa Yönetimi</u></h3>
+
+    <p>Bu bölümde sayfa oluşturabilir ve isterseniz HTML, isterseniz editörü kullanarak sayfalar oluşturabilirsiniz.</p>
+
+    <h3><u>Kullanıcı Yönetimi</u></h3>
+
+    <p>Bu bölümde kullanıcılarınızı yönetebilirsiniz. Birine <b>`Yönetici`</b> yetkisi vermak veya onları <b>`Yasaklamak`</b> için burayı kullanın. Ayrıca burada kendiniz de üyelik oluşturabilirsiniz. Kayıt olmayı kapattığınız takdirde üyelikleri buradan açabilirsiniz.</p>
+
+    <h3><u>Widget Yönetimi</u></h3>
+
+    <p>Widgetler öntanımlı olarak sitenin sağındaki menüye eklenir. Widgetler HTML, resim, gif, swf (flash) ve adsense kodlarını destekler. Bu menüyü kullanarak istediğiniz gibi widget oluşturabilirsiniz.</p>
+
+    <h3><u>Yorum Yönetimi</u></h3>
+
+    <p>Bu bölümde paylaşımlara yapılan yorumları yönetebilirsiniz. Onayla, onayı kaldır, sil ve tümünü onayla gibi araçları kullanabilirsiniz.
+
+    <p>Onaylarla kendiniz uğraşmak istemiyorsanız, Ayar Yönetimi sayfasındaki <b>Yorumları otomatik onayla</b> seçeneğini açıp yorumların otomatik olarak onaylanmasını sağlayabilirsiniz.</p>
+
+    <h3><u>Ayar Yönetimi</u></h3>
+
+    <p>Burada uygulamanın tüm ayarlarını değiştirebilir ve logonuzu güncelleyebilirsiniz.</p>
+    <hr>
+    <!-- section -->
+
+    <!-- section -->
+    <h3 id="application2"><strong>3.2 Yetkileri anlamak</strong> - <a href="#toc">yukarı</a></h3>
+
+    <p>Arwell'de 4 tane yetki bulunmaktadır.</p>
+
+    <p><b><u>Ziyaretçi:</u></b> Üyeliği olmayan ziyaretçiler.</p>
+
+    <p><b><u>Kullanıcı:</u></b> Kullanıcılar</p>
+
+    <p><b><u>Yönetici:</u></b> Yöneticiler</p>
+
+    <p><b><u>Yasaklı:</u></b> Yasaklılar</p>
+    <!-- /section -->
+
+
+    <!--
+        Section Header
+    -->
+    <div id="updating">
+        <h1>4. Güncellemeler</h1>
+    </div>
+
+    <!-- section -->
+    <h3 id="updating1"><strong>4.1 Uygulamayı güncellemek</strong> - <a href="#toc">yukarı</a></h3>
+
+    <p>Her güncelleme <b>app/docs/updating</b> klasörü altına bir <b>versiyon.txt</b> dosyasıyla gelir. Güncelleme talimatları için bunları okumalısınız.</p>
+    <hr>
+    <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="credits">
+        <h1>5. Kapanış</h1>
+    </div>
+
+    <!-- section -->
+    <h3 id="credits1"><strong>5.1 Kapanış</strong> - <a href="#toc">yukarı</a></h3>
+
+    <p>Umarım Arwell'i beğenirsiniz! </p>
+
+    <p>Hertürlü görüş, öneri, hata raporu, hatta merhaba demek için bile bana email atabilirsiniz.</p>
+    <hr>
+    <!-- section -->
+    
+    <h2>Bol şans!</h2>
+    <p class="append-bottom alt large"><strong>Anıl ÜNAL, Arwell uygulaması geliştiricisi</strong></p>
+        
+        <hr class="space">
+    </div><!-- end div .container -->
+</body>
+</html>

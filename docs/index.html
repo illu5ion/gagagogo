@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Arwell :: Documentation</title>
+
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .arwell-color {
+            color: #454545;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="./assets/images/logo.png" class="center">
+    
+        <h1 class="center arwell-color">Arwell :: Documentation <i>(for version 1.6)</i></h1>
+
+        <a href="./turkce.html"><h2 class="center arwell-color"><u>Türkçe dökümantasyona geç?</u></h2></a>
+        
+        <hr>
+        
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                    Created: 05/03/2014<br>
+                    Made in: Kastamonu, TURKEY<br>
+                    By: Anıl ÜNAL<br>
+                    Email: <a href="mailto:iamaristona@gmail.com">iamaristona@gmail.com</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->      
+    
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Hi there! Thank you for purchasing Arwell. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/Aristona">here</a> or simply send me an email. Thank you!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+        
+        <hr>
+        
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ul class="alpha">
+            <li><a href="#preface">1. Preface</a></li>
+                <li><a href="#preface1">&nbsp;&nbsp;&nbsp; 1.1 Thank you</a></li>
+                <li><a href="#preface2">&nbsp;&nbsp;&nbsp; 1.2 Used technology</a></li>
+                <li><a href="#preface3">&nbsp;&nbsp;&nbsp; 1.3 Scaffolding</a></li>
+                <li><a href="#preface4">&nbsp;&nbsp;&nbsp; 1.4 Demo</a></li>
+                <li><a href="#preface5">&nbsp;&nbsp;&nbsp; 1.5 Requirements</a></li>
+                <li><a href="#preface6">&nbsp;&nbsp;&nbsp; 1.6 Patch Notes</a></li>
+            <li><a href="#installation">2. Installation</a></li>
+                <li><a href="#installation1">&nbsp;&nbsp;&nbsp; 2.1 PHP config changes</a></li>
+                <li><a href="#installation2">&nbsp;&nbsp;&nbsp; 2.2 Using the Installer</a></li>
+                <li><a href="#installation3">&nbsp;&nbsp;&nbsp; 2.3 Getting your custom Facebook application</a></li>
+            <li><a href="#application">3. Using Arwell</a></li>
+                <li><a href="#application1">&nbsp;&nbsp;&nbsp; 3.1 Let's login</a></li>
+                <li><a href="#application2">&nbsp;&nbsp;&nbsp; 3.2 Understanding permissions</a></li>
+            <li><a href="#updating">4. Updating</a></li>
+                <li><a href="#updating1">&nbsp;&nbsp;4.1 Updating application</a></li>
+            <li><a href="#credits">5. Credits</a></li>
+                <li><a href="#credits1">&nbsp;&nbsp;&nbsp; 5.1 Credits</a></li>
+                <li><a href="#credits2">&nbsp;&nbsp;&nbsp; 5.2 Notes to you</a></li>
+        </ul>
+        <hr>
+
+    <!--
+        Section Header
+    -->
+    <div id="preface">
+        <h1>1. Preface</h1>
+    </div>
+
+        <!-- section -->
+        <h3 id="preface1"><strong>1.1 Thank you</strong> - <a href="#toc">top</a></h3>
+        <p class="prepend-top append-0">Hi there! Thank you for purchasing Arwell. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/Aristona">here</a> or simply send me an email. Thank you!</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface2"><strong>1.2 Used technology</strong> - <a href="#toc">top</a></h3>
+        <p>Arwell uses the powerful PHP framework Laravel 4 on backend. On the front end, it uses Bootstrap 3 for styling and used jQuery for customization. Arwell template is fully responsive and it uses a completely different, open-source admin template called Charisma, that is suitable for admin tasks.</p>
+
+        <p>Although you can use Arwell with different databases, the de-facto standard on hostings are MySQL, so I supported it by default. If you need to use something different than MySQL (such as PostgreSQL) you can easily do the change via configuration.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface3"><strong>1.3 Scaffolding</strong> - <a href="#toc">top</a></h3>
+        <p>Let me give you a short brief about folder system before you start using Arwell.</p>
+
+        <pre>
+            app: This is where the backend logic of Arwell is located.
+            app/config: Configuration files are located here.
+            bootstrap: Used by Laravel framework.
+            vendor: All the backend plugins can be found here.
+
+            assets/home: All the assets of Arwell Template is located here.
+            assets/admin: All the assets of Charisma template is located here.
+            uploads: Anything uploaded by you will be kept here.
+            docs: Documentation of application can be found here.
+        </pre>
+
+        <p>Files in the main directory are not important for you. They are configuration files of different tools I used while developing this application and completely harmless.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface4"><strong>1.4 Demo</strong> - <a href="#toc">top</a></h3>
+        <p>At the time of writing this documentation, demo project is up and live in <a href="http://arwell.anilunal.com/">this website.</a></p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="preface5"><strong>1.5 Requirements</strong> - <a href="#toc">top</a></h3>
+        <p>Arwell requires:</p>
+            <ul>
+                <li>PHP 5.3.7 and above (above patch 1.4.1 requires PHP 5.4)</li>
+                <li>PDO extension</li>
+                <li>PHP GD Extension</li>
+                <li>PHP FileInfo Extension</li>
+                <li>PHP Bcrypt Extension (comes builtin if you use PHP 5.3.7 and above)</li>
+                <li>A database present</li>
+                <li>Apache mod_rewrite module</li>
+            </ul>
+        <hr>
+        <!-- section -->
+
+        <div class="clearfix"></div>
+
+        <!-- section -->
+        <h3 id="preface6"><strong>1.6 Patch Notes</strong> - <a href="#toc">top</a></h3>
+
+                <p>Patch 1.6</p>
+
+                <ul>
+                    <li>Fixed alot of reported bugs, especially Facebook ones.</li>
+                    <li>Added sidebar enhancements plugin for free! It will make your sidebar even better.</li>
+                    <li>There is no longer an unique check for gag titles.</li>
+                    <li>URL structure changed slightly.</li>
+                    <li>Meme Generator plugin has been put for sale, and currently supported by this version.</li>
+                    <li>Facebook API has been made 2.0 compliant.</li>
+                    <li>Users will be prompted to pick an username if Facebook doesn't provide an email.</li>
+                    <li>A bug which affected Turkish language has been fixed.</li>
+                    <li>All the underlying packages has been updated to latest versions.</li>
+                </ul>
+
+                <p>Patch 1.5</p>
+
+                <ul>
+                    <li>Fixed alot of reported bugs.</li>
+                    <li>Removed catpcha feature.</li>
+                    <li>Added a plugin system. We will soon be sharing free and paid plugins!</li>
+                    <li>Structural changes within application.</li>
+                    <li>Admin panel now has a section specialized for pluins.</li>
+                    <li>You can install/uninstall plugins.</li>
+                </ul>
+
+                <p>Patch 1.4.2</p>
+
+                <ul>
+                    <li>Fixed some bugs related to installation.</li>
+                    <li>Made images to resize when uploaded.</li>
+                </ul>
+
+
+                <p>Patch 1.4.1</p>
+
+                <ul>
+                    <li>Fixed some bugs related to IE 11.</li>
+                    <li>Laravel version updated from 4.0 to 4.2.</li>
+                    <li>As a result of this version change, PHP requirement increased to PHP 5.4</li>
+                    <li>Added pace.js, which will show loading icon at top right of your website.</li>
+                    <li>You can now see sass and js files in __dev folder.</li>
+                    <li>Javascripts are minified for increased performance.</li>
+                    <li>"No gag is found." messages no longer appear.</li>
+                    <li>Localizations now translated "hour ago" messages properly.</li>
+                    <li>Documentation has been updated to reflect changes.</li>
+                </ul>
+
+
+                <p>Patch 1.4</p>
+
+                <ul>
+                    <li>New feature: Turkish (Türkçe) is now an officially supported language.</li>
+                    <li>New feature: Admins can now set default theme using Settings Management.</li>
+                    <li>New feature: Added "Next" button to gags.</li>
+                    <li>Improvement: Themes will now appear as multilingual.</li>
+                    <li>Improvement: Admin panel is now multilingual. So far, we support English and Turkish.</li>
+                    <li>Improvement: User management now show registration type.</li>
+                    <li>Bugfix: Banned users may no longer login using Facebook oAuth.</li>
+                    <li>Bugfix: Improved Facebook oAuth, as some users were previously experiencing issues with Facebook not returning usernames.</li>
+                    <li>Bugfix: Deleted gags will no longer leave trash data (e.g notifications) behind themself.</li>
+                    <li>Bugfix: Pinterest button now works properly.</li>
+                    <li>Misc: Documentation has been updated to reflect changes.</li>
+                </ul>
+
+
+                <p>Patch 1.3</p>
+
+                <ul>
+                    <li>New feature: Hot, Top, Trending and Fresh algorithms has been added.</li>
+                    <li>Top: Loads most liked gags of all time.</li>
+                    <li>Hot: Loads most liked gags of this month.</li>
+                    <li>Trending: Loads most liked gags of this week.</li>
+                    <li>Fresh: Loads gags in ascending order they were added.</li>
+                    <li>New feature: If there are more than 4 categories, they will be visible under "More" dropdown.</li>
+                    <li>Improvement: Contact page has been removed from navigation. It is moved to "Pages" widget.</li>
+                    <li>New feature: Gags now can be made approved or disapproved on Gag Management.</li>
+                    <li>New feature: Approving a gag makes the gag visible to everyone, disapprove does the opposite.</li>
+                    <li>Improvement: Gag Management section buttons looks slightly better and smaller now.</li>
+                    <li>New feature: Ajax state has been added to buttons. Users will get "Loading..." message when there is a task running on background. (such as upload)</li>
+                    <li>New feature: Optional "credits" section has been added to Gag uploads. (Some people needed this for legal/ethic purposes.)</li>
+                    <li>New feature: Gag dates are now visible on the section below gag title.</li>
+                    <li>Bugfix: Gifs can now be paused properly.</li>
+                    <li>Bugfix: A small bug related to watermarks has been fixed. Now they properly be attached to all images.</li>
+                    <li>Bugfix: A small bug related to wrong URL on notifications has been fixed.</li>
+                    <li>Bugfix: A small bug related which caused an exception when users clicked upload without selecting an image has been fixed.</li>
+                    <li>Bugfix: A small bug related to updating has been fixed. (It was nothing important)</li>
+                    <li>Misc: custom.js has been renamed to app.js</li>
+                    <li>Misc: Some typos has been corrected on the admin panel.</li>
+                    <li>Misc: Continuted to work on improving application architecture. Soon, all of my projects will share the same functionality automatically, which means I can work much faster and you can get more stable applications/more updates at a higher speed.</li>
+                    <li>Misc: Documentation has been updated to reflect changes.</li>
+                </ul>
+
+                
+
+                <p>Patch 1.2</p>
+
+                <ul>
+                    <li>New feature: Watermark feature has been added. It automatically places your watermark image on image uploads.</li>
+                    <li>Admin can enable or disable watermark feature on Settings Management.</li>
+                    <li>Admin can change watermark image on Settings Management.</li>
+                    <li>Improvement: Settings Management has been updated.</li>
+                    <li>New feature: Widget Management has been added.</li>
+                    <li>Admin can create unlimited amount of widgets on the sidebar.</li>
+                    <li>Widgets can be used for anything, like Advertisements.</li>
+                    <li>Widgets support WYSIWYG editor, salt HTML, script, image uploads, gif uploads, SWF (Flash) uploads.</li>
+                    <li>New feature: Meta tags for seo has been updated. Now they will be different on every page.</li>
+                    <li>Improvement: Every library that application depends on has been updated to newest versions.</li>
+                    <li>Misc: Documentation has been updated to reflect changes.</li>
+                    <li>Bugfix: Some minor issues has been fixed on documentation.</li>
+                </ul>
+
+
+                <p>Patch 1.1</p>
+
+                <ul>
+                    <li>Bugfix: Gags will no longer be visible if they are not approved by admin.</li>
+                    <li>Bugfix: Infinite scroll no longer loads same gags more than once.</li>
+                    <li>Bugfix: Gif and vine videos now properly work on category pages.</li>
+                    <li>Bugfix: Fixed a bug related to wrong iframe and script usage on settings page.</li>
+                    <li>Bugfix: Website will no longer be blank if there is a missing script tag on Google Analytics code.</li>
+                    <li>New feature: Custom 404 page has been added. Design will be improved in next patch.</li>
+                    <li>New feature: Facebook login has been implemented using oAuth. We will be adding new oAuth providers in the future.</li>
+                    <li>Improvement: Added 1 second delay on infinite scroll feature on homepage.</li>
+                    <li>Improvement: Gif and vine play icons has been improved.</li>
+                    <li>Improvement: Avatar system has been improved. Now it supports Facebook avatars too.</li>
+                    <li>Improvement: Installer has been improved.</li>
+                    <li>Improvement: Installer will now regenerate application secret key. (security improvement)</li>
+                    <li>Improvement: Every library that application depends on has been updated to newest versions.</li>
+                    <li>Improvement: Updating has been improved. Now, all you need to do is to enter your admin panel and click on "Update application" button.</li>
+                    <li>Misc: Documentation has been updated to reflect changes.</li>
+                    <li>Misc: Custom SASS files are now available for technical people who want to customise the design themself.</li>
+                    <li>Misc: Documentation now shows you how to get your custom Facebook application.</li>
+                </ul>
+
+
+                <p>Patch 1.0</p>
+                <ul>
+                    <li>
+                        Initial release.
+                    </li>
+                </ul>
+
+                <p><b>Updating</b></p>
+                <span>Please check `[application]/docs/updating` folder for the instructions.</span>
+
+        <hr>
+        <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="installation">
+        <h1>2. Installation</h1>
+    </div>
+        
+        <!-- section -->
+        <h3 id="installation1"><strong>2.1 PHP config changes</strong> - <a href="#toc">top</a></h3>
+    
+        <p>Open: <b>`app/config/database.php`</b> with your favorite text editor. Find this line:</p>
+                <img class="center" src="assets/images/1database.png" style="width: 600px; height: auto;" alt="Image" />
+
+        <p>Change it according to your database credentials. You only need to change the values on right side, and make sure you don't delete quotation marks and commas. Just change <b>host, database, username and password</b> fields and leave the rest as it is.</p>
+
+        <p>Now, open: <b>`app/config/site.php`</b></p>
+                <img class="center" src="assets/images/1site.png" style="width: 600px; height: auto;" alt="Image" />
+        
+        <p>This is pretty self explanatory, but I'll explain regardless.</p>
+            
+        <p>
+            <b>Application name</b> is your application's name, you can name it as your company name or anything like that.<br>
+            <b>Title seperator</b> is the title seperator symbol, used on browsers. Best to keep as ::, or you can use symbols like - if you prefer.<br>
+            <b>Description</b> is a short description of your website. It will be used by search engines. Write something short that describes your website.<br>
+            <b>Keywords</b> is keywords of your website. It will be used by search engines while indexing your website. You can seperate words by commas. For example, "gags, gag website, funny" etc.<br>
+        </p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="installation2"><strong>2.2 Using the Installer</strong> - <a href="#toc">top</a></h3>
+
+        <p>Enter your website. Installer will run automatically. Enter your administrator account's details.</p>
+
+                <img class="center" src="assets/images/install.png" style="width: 600px; height: auto;" alt="Image" />
+
+        <p>When you're done, you will see this page, which means you successfully installed your application.</p>
+
+                <img class="center" src="assets/images/success.png" style="width: 600px; height: auto;" alt="Image" />
+
+        <p>If you did everything correctly so far, it means application is correctly installed. Let's head on creating our facebook application now.</p>
+        <hr>
+        <!-- section -->
+
+        <!-- section -->
+        <h3 id="installation3"><strong>2.3 (OPTIONAL) Getting your custom Facebook application</strong> - <a href="#toc">top</a></h3>
+    
+        <p>Before you can use Facebook Connect feature, you need to get yourself a Facebook application on <b>https://developers.facebook.com</b> - You may skip this if you don't want to use Facebook Connect feature on your website.</p>
+
+        <p>Please follow those steps to create your Facebook application.</p>
+
+        <ol>
+            <li>Enter https://developers.facebook.com</li>
+            <li>Click on "Applications" and click on "Create a new app".</li>
+            <li>Display name: Write something (e.g your website name) and choose a suitable category.</li>
+            <li>Go back to facebook.com - click on cogwheel (settings icon) and select "Manage my applications"</li>
+            <li>You should see your created application there. Click on it.</li>
+            <li>Copy "App code" and "App secret".</li>
+            <li>Open "config/packages/artdarek/oauth-4-laravel/config.php" file.</li>
+            <li>Enter "App code" to 'client_id' section.</li>
+            <li>Enter "App secret to 'client_secret' section.</li>
+            <li>Go back to your Facebook application, click on Settings.</li>
+            <li>Enter your email address where suitable.</li>
+            <li>Click on "Advanced". Find: "Valid OAuth redirect URIs" - Enter your website address here.</li>
+            <li>Finally, go to Status & Review page and start your application. (e.g make it to public)</li>
+        </ol>
+
+        <p>If you did this step corretly, you can use "Facebook Connect" feature.</p>
+        <p>This is all for installing. Let's move onto the most fun part - Logging in and using our application!</p>
+
+        <hr>
+        <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="application">
+        <h1>3. Using Arwell</h1>
+    </div>
+        
+    <!-- section -->
+    <h3 id="application1"><strong>3.1 Let's login</strong> - <a href="#toc">top</a></h3>
+
+    <p>Browse <b>`yourwebsite.com`</b>. Click user icon on the right and click login.</p>
+
+            <img class="center" src="assets/images/login.png" style="width: 600px; height: auto;" alt="Image" />
+
+    <p>Login with the credentials you used previously. Upon logging in, you will be redirected to your admin control panel, which looks like this:</p>
+
+            <img class="center" src="assets/images/admin.png" style="width: 700px; height: auto;" alt="Image" />
+
+    <p>Using Arwell's Admin Control Panel is really easy and straightforward. Let me shortly explain the interface and tell you what you can do.</p>
+
+    <p><b>`Back to site homepage`</b> link at the top brings you back to the website. By clicking on <b>`admin`</b> on the top-right side, you can choose to logout, or edit your profile information. By clicking on <b>`Update application`</b> on the top-right side, you can update Arwell to the newer version without any hassle. Navigation menu can be found on the left side and that is where you will be spending majority of your time.</p>
+    
+    <h3><u>Gag Management</u></h3>
+    <p>In this section, you can manage gags on your website. You can delete them, or feature on the sidebar.</p>
+
+    <h3><u>Category Management</u></h3>
+
+    <p>You can create categories in this section. They can be named as `Funny, Cosplay, Girls` etc. Users will add their content into those categories.</p>
+
+    <h3><u>Contact Management</u></h3>
+
+    <p>In this section, you can see messages sent to you by website's <b>`Contact`</b> page. You can decide to reply them or delete their message.</p>
+
+    <h3><u>Page Management</u></h3>
+
+    <p>In this section, you can create your own html pages. Creating a page supports both WYSIWYG editor and HTML. Being able to use HTML will let you design your page however you like.</p>
+
+    <p>For example, you can create pages such as: "License aggrement", "Privacy", "Legal", "About Us" etc. or even a "Gallery". How cool is that?</p>
+
+    <h3><u>User Management</u></h3>
+
+    <p>You can manage your users in this section. You can give someone <b>`Administrator`</b> access or <b>`Ban`</b> them. You can also create users yourself. This is very useful if you disable registration but still need to give someone an account to use the application.</p>
+
+    <h3><u>Comment Management</u></h3>
+
+    <p>In this section, you can <b>`Mass approve`</b> <b>`Approve`</b>, <b>`Disapprove`</b> or <b>`Delete`</b> user's comments. By default, comments will be automatically approved. (You can change this feature on Settings Management)
+
+    <p>If you are short on time, you can use <b>Mass Approve</b> tool. It will <b>`Approve`</b> all comments.
+
+    <p>You can also set <b>Auto-approve</b> setting to <b>`Enabled`</b> on <b>Settings Management</b>, so all comments will automatically be approved upon creation.</p>
+
+    <h3><u>Widget Management</u></h3>
+
+    <p>You can manage your widgets in this section. Widgets can be used for anything. Custom blocks, advertisement blocks, etc.</p>
+
+    <h3><u>Settings Management</u></h3>
+
+    <p>In this section, you can configure your everything about your application. You can upload your website logo, set commenting to autoapprove type, change copyright text, add custom google analytics code, give facebook like url and alot more.</p>
+    <hr>
+    <!-- section -->
+
+    <!-- section -->
+    <h3 id="application2"><strong>3.2 Understanding permissions</strong> - <a href="#toc">top</a></h3>
+
+    <p>There are 4 permission types on Arwell.</p>
+
+    <p><b><u>Guests:</u></b> Guests are visitors of your website. They are not logged in by default, so they can't use features like <b>`Commenting`</b>. They can be <b>`Users`</b> if they decide to register and get an account for themself.</p>
+
+    <p><b><u>Users:</u></b> Users are visitors of your website, but unlike guests, they have an account so they can use features like <b>`Commenting`</b> or <b>`Access their profile page`</b> to set up their profile. <b>`/profile`</b> page is only usable when you are an User.
+
+    <p><b><u>Admins:</u></b> Admins are the managers of your website. They can access <b>`/admin`</b> page and manage the whole website. Admins are also a type of User, so they can use both <b>`/account`</b> and <b>`/admin`</b> pages until they logout. There is always at least one <b>`Admin`</b> on the website.
+
+    <p><b><u>Banned:</u></b> Those guys once was an <b>`User`</b>, but <b>`Admin`</b> decided to ban them (maybe they didn't speak polite enough, who knows) so they can't login anymore. <b>`Admin`</b> can ban or unban people in this admin control panel's <b>`User Settings`</b>.
+    <!-- /section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="updating">
+        <h1>4. Updating</h1>
+    </div>
+
+    <!-- section -->
+    <h3 id="updating1"><strong>4.1 Updating application</strong> - <a href="#toc">top</a></h3>
+
+    <p>Every update provided a <b>version.txt</b> in docs/updating folder. You can read those.</p>
+    <hr>
+    <!-- section -->
+
+    <!--
+        Section Header
+    -->
+    <div id="credits">
+        <h1>4. Credits</h1>
+    </div>
+
+    <!-- section -->
+    <h3 id="credits1"><strong>4.1 Credits</strong> - <a href="#toc">top</a></h3>
+
+    <p>This application would not be possible without awesome developers and their open source projects. I would like to thank to: 
+        <a href="http://laravel.com/">Laravel Framework</a>, <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, <a href="http://jquery.com/">jQuery</a> and the awesome text editor I built this application with, <a href="http://www.sublimetext.com/">Sublime Text 2</a>
+    </p>
+    <hr>
+    <!-- section -->
+
+    <!-- section -->
+    <h3 id="credits2"><strong>4.2 Notes to you</strong> - <a href="#toc">top</a></h3>
+        <p>I really hope you like Arwell.</p>
+
+        <p>For any kind of bug reports, feedback, feature requests, or even if you just want to say hello, feel free to email me. I'll be really happy about it.</p>
+    <hr>
+    <!-- section -->
+    
+    <h2>Good luck, and have fun!</h2>
+    <p class="append-bottom alt large"><strong>Anıl ÜNAL, developer of Arwell application</strong></p>
+        
+        <hr class="space">
+    </div><!-- end div .container -->
+</body>
+</html>

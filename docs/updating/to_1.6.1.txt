@@ -1,0 +1,7 @@
+### English ###
+
+    1. Replace app\views\theme-admin\gag.blade.php
+
+### Türkçe ###
+
+    1. app\views\theme-admin\gag.blade.php dosyasını değiştirin.

@@ -1,0 +1,31 @@
+﻿### English ###
+
+	1. Replace everything in the root folder. (e.g index.php, .htaccess etc. - except folders!)
+	2. Move app/composers.php to app/composers.php
+	3. Move app/routes.php to app/routes.php
+	4. Move app/filters.php to app/filters.php
+	5. Move app/config folder to app/config and override all. (You need to enter your database credentials again.)
+	6. Move app/database folder and override all.
+	7. Move app/lang folder and override all.
+	8. Move app/models/User.php to app/models/User.php.
+	9. Override app/views/ folder with app/views folder.
+	10. Override /bootstrap folder with /bootstrap.
+	11. Override /assets folder with /assets.
+	12. Override /vendor folder.
+	13. Enter yourwebsite.com/updater/update once.
+
+### Türkçe ###
+
+	1. Ana klasördeki herşeyi güncelleyin. (örn index.php, .htaccess vb. - klasörler hariç!)
+	2. app/composers.php dosyasını app/composers.php olarak üzerine yazdırın.
+	3. app/routes.php dosyasını app/routes.php olarak üzerine yazdırın.
+	4. app/filters.php dosyasını app/filters.php olarak üzerine yazdırın.
+	5. app/config klasörünü app/config e taşıyıp üzerine yazdırın. (Veritabanı bilgilerinizi tekrar girmeniz lazım.)
+	6. app/database klasörünü taşıyın ve üzerine yazdırın.
+	7. app/lang klasörünü taşıyın ve üzerine yazdırın.
+	8. app/models/User.php dosyasını taşıyın ve üzerine yazdırın.
+	9. app/views/ klasörünü taşıyın ve üzerine yazdırın.
+	10. /bootstrap klasörünü taşıyın ve üzerine yazdırın.
+	11. /assets klasörünü taşıyın ve üzerine yazdırın.
+	12. /vendor klasörünü taşıyın ve üzerine yazdırın.
+	13. Bir defa siteniz.com/updater/update adresine girin.
